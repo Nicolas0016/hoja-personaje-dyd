@@ -1,0 +1,23 @@
+/* Aplicar la fuente medieval a todo el documento */
+body {
+  font-family: "MedievalSharp", sans-serif;
+}
+
+/* También puedes aplicar la fuente solo a ciertos elementos, por ejemplo: */
+h1,
+h2,
+h3 {
+  font-family: "MedievalSharp", sans-serif;
+}
+
+p,
+ul,
+li {
+  font-family: "MedievalSharp", sans-serif;
+}
+input:focus {
+  outline: none;
+}
+area:focus {
+  outline: none;
+}

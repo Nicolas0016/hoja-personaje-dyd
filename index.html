@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-gray-100">
+    <header class="flex flex-col px-4 py-6 rounded-lg gap-3">
+      <div class="text-center flex flex-col justify-center items-center w-full">
+        <h1 class="text-2xl font-bold text-gray-900">
+          Vieja <br />
+          Escuela
+        </h1>
+        <span class="text-gray-600 text-lg">• juego de rol •</span>
+      </div>
+      <ul class="text-lg flex gap-2">
+        <li class="w-1/3">
+          <label class="flex flex-col"
+            ><span>nombre</span> <input class="border-b-2" id="nombre"
+          /></label>
+        </li>
+        <li class="w-1/3">
+          <label class="flex flex-col"
+            ><span>raza</span> <input class="border-b-2" id="raza"
+          /></label>
+        </li>
+        <li class="w-1/3">
+          <label class="flex flex-col"
+            ><span>clase</span> <input class="border-b-2" id="clase"
+          /></label>
+        </li>
+      </ul>
+      <ul class="flex gap-5 justify-center text-center">
+        <li class="w-12">
+          <label class="flex flex-col text"
+            ><span>Nivel</span>
+            <input class="border-b-2 text-center" id="nivel"
+          /></label>
+        </li>
+        <li class="w-12">
+          <label class="flex flex-col"
+            ><span>PR</span> <input class="border-b-2 text-center" id="pr"
+          /></label>
+        </li>
+      </ul>
+      <ul class="flex gap-5 justify-center text-center">
+        <li class="w-1/2">
+          <label class="flex flex-col"
+            ><span>Talentos</span> <input class="border-b-2" id="talentos"
+          /></label>
+        </li>
+        <li class="w-1/2">
+          <label class="flex flex-col"
+            ><span>Transfondos</span> <input class="border-b-2" id="trasfondos"
+          /></label>
+        </li>
+      </ul>
+    </header>
+
+    <nav class="sticky top-0 bg-gray-100 h-11 flex items-center scroll-smooth">
+      <ul class="w-full flex justify-around">
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#estadisticas">Estadisticas</a></li>
+        <li><a href="#otros">Otros</a></li>
+      </ul>
+    </nav>
+
+    <section id="habilidades" class="my-5">
+      <span class="ms-2 text-3xl">Habilidades</span>
+      <ul class="px-10">
+        <li class="w-full">
+          <label class="flex justify-between"
+            ><span class="text-3xl">Alerta</span>
+            <input class="border-b-2 w-12 text-center" id="alerta"
+          /></label>
+        </li>
+        <li class="w-full">
+          <label class="flex justify-between"
+            ><span class="text-3xl">Comunicación</span>
+            <input class="border-b-2 w-12 text-center" id="comunicacion"
+          /></label>
+        </li>
+        <li class="w-full">
+          <label class="flex justify-between"
+            ><span class="text-3xl">Manipulación</span>
+            <input class="border-b-2 w-12 text-center" id="manipulacion"
+          /></label>
+        </li>
+        <li class="w-full">
+          <label class="flex justify-between"
+            ><span class="text-3xl">Erudición</span>
+            <input class="border-b-2 w-12 text-center" id="erudicion"
+          /></label>
+        </li>
+        <li class="w-full">
+          <label class="flex justify-between"
+            ><span class="text-3xl">Sufragio</span>
+            <input class="border-b-2 w-12 text-center" id="sufragio"
+          /></label>
+        </li>
+
+        <li class="w-full">
+          <label class="flex justify-between"
+            ><span class="text-3xl">Supervivencia</span>
+            <input class="border-b-2 w-12 text-center" id="supervivencia"
+          /></label>
+        </li>
+      </ul>
+    </section>
+    <section id="estadisticas" class="mb-6">
+      <span class="ms-2 text-3xl">Estadisticas</span>
+      <ul class="px-10">
+        <li class="w-full flex gap-3 justify-between">
+          <label class="flex"
+            ><span class="text-3xl uppercase">fue</span></label
+          >
+          <div>
+            <input class="border-b-2 w-12 text-center" id="fueCuant" />
+            <input class="border-b-2 w-12 text-center" id="fueModify" />
+          </div>
+        </li>
+        <li class="w-full flex gap-3 justify-between">
+          <label class="flex"
+            ><span class="text-3xl uppercase">des</span></label
+          >
+          <div>
+            <input class="border-b-2 w-12 text-center" id="desCuant" />
+            <input class="border-b-2 w-12 text-center" id="desModify" />
+          </div>
+        </li>
+        <li class="w-full flex gap-3 justify-between">
+          <label class="flex"
+            ><span class="text-3xl uppercase">con</span></label
+          >
+          <div>
+            <input class="border-b-2 w-12 text-center" id="conCuant" />
+            <input class="border-b-2 w-12 text-center" id="conModify" />
+          </div>
+        </li>
+        <li class="w-full flex gap-3 justify-between">
+          <label class="flex"
+            ><span class="text-3xl uppercase">int</span></label
+          >
+          <div>
+            <input class="border-b-2 w-12 text-center" id="intCuant" />
+            <input class="border-b-2 w-12 text-center" id="intModify" />
+          </div>
+        </li>
+        <li class="w-full flex gap-3 justify-between">
+          <label class="flex"
+            ><span class="text-3xl uppercase">sab</span></label
+          >
+          <div>
+            <input class="border-b-2 w-12 text-center" id="sabCuant" />
+            <input class="border-b-2 w-12 text-center" id="sabModify" />
+          </div>
+        </li>
+        <li class="w-full flex gap-3 justify-between">
+          <label class="flex"
+            ><span class="text-3xl uppercase">car</span></label
+          >
+          <div>
+            <input class="border-b-2 w-12 text-center" id="carCuant" />
+            <input class="border-b-2 w-12 text-center" id="carModify" />
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="otros">
+      <span class="ms-2 text-3xl">Otros</span>
+      <ul class="px-10">
+        <li class="w-full">
+          <label class="flex justify-between"
+            ><span class="text-3xl">Pv</span>
+            <input class="border-b-2 w-12 text-center" id="pv"
+          /></label>
+        </li>
+        <li class="w-full">
+          <label class="flex justify-between"
+            ><span class="text-3xl">mov</span>
+            <input class="border-b-2 w-12 text-center" id="mov"
+          /></label>
+        </li>
+        <li class="w-full">
+          <label class="flex justify-between"
+            ><span class="text-3xl">def</span>
+            <input class="border-b-2 w-12 text-center" id="def"
+          /></label>
+        </li>
+        <li class="w-full">
+          <label class="flex justify-between"
+            ><span class="text-3xl">atq</span>
+            <input class="border-b-2 w-12 text-center" id="atq"
+          /></label>
+        </li>
+        <li class="w-full">
+          <label class="flex justify-between"
+            ><span class="text-3xl">ins</span>
+            <input class="border-b-2 w-12 text-center" id="ins"
+          /></label>
+        </li>
+
+        <li class="w-full">
+          <label class="flex justify-between"
+            ><span class="text-3xl">pod</span>
+            <input class="border-b-2 w-12 text-center" id="pod"
+          /></label>
+        </li>
+      </ul>
+    </section>
+    <section class="flex flex-col px-6">
+      <span class="ms-2 text-3xl">Armas</span>
+      <textarea
+        id="armas"
+        name=""
+        class="min-h-24 text-2xl"
+        style="field-sizing: content"
+      ></textarea>
+    </section>
+    <section class="flex flex-col px-6">
+      <span class="ms-2 text-3xl">Equipo</span>
+      <textarea
+        id="equipo"
+        name=""
+        class="min-h-9 text-2xl"
+        style="field-sizing: content"
+      ></textarea>
+    </section>
+    <button
+      id="guardarBtn"
+      class="fixed bottom-[25px] right-[25px] px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+    >
+      Guardar
+    </button>
+    <script src="./script.js"></script>
+  </body>
+</html>
